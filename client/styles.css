@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+body{
+  /* color : blue; */
+  border-style: dotted;
+  padding: 10px;;
+  background-color: lightgray;
+}
+h1 {
+  text-align: center;
+  animation: slideInDown 1s ease-out;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.compliment-container {
+  display: flex;
+  align-items: left;
+  /* justify-content: space-between; */
+  margin-bottom: 10px; 
+  /* background-color: aliceblue; */
+  padding: 5px;
+}
+
+.compliment-text {
+  /* flex: 0.5; */
+  margin-right: 10px;
+  color : blue;
+
+  animation: slideInLeft 0.5s ease-out;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.compliment-actions, #getAcompliment, #getFortune{
+  display: flex;
+  justify-content:center;
+}
+
+button{
+  color :white;
+  background-color: rgb(120, 120, 239);
+  margin-right: 5px;
+  border-radius: 20%;
+  border: none;
+  animation: slideInRight 0.5s ease-out;
+}
+
+@keyframes slideInRight {
+  from {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+button:hover{
+  color:white;
+  background-color: rgb(47, 47, 134);
+  cursor: pointer;
+  /* border-radius: 40%; */
+  /* transform used to pop out the button x and y axis */
+  transform: scale(1.1);
+}
+
+input:hover{
+  color :blue;
+  margin: 10px;
+  cursor: pointer;
+  transform: scale(1.1);
+
+} 
+ /* .compliment-actions button {
+  
+  
+} */
+
+
+
