@@ -29,7 +29,11 @@ const addCompliment = () => {
           //alert(res.data);
           getComplimentAll();
           
-  });
+  })
+  .catch(err=>{
+    console.log(err);
+
+})
 };
 
 const getComplimentAll=()=> {
@@ -82,7 +86,11 @@ const getCompliment = () => {
             console.log(res.data);
             alert(data);
             //getComplimentAll();
-    });
+    })
+    .catch(err=>{
+      console.log(err);
+
+  })
 };
 
 function updateCompliment(compliment) {
@@ -95,7 +103,7 @@ function updateCompliment(compliment) {
         getComplimentAll();
       })
       .catch(error => {
-        console.error(error);
+        console.error("Therer was an error in entering the new compliment, Please try again " +error);
       });
   }
 }

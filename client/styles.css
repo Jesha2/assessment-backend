@@ -3,21 +3,27 @@
 body{
   /* color : blue; */
   border-style: dotted;
-  padding: 10px;;
+  /* padding: 10px;; */
   background-color: lightgray;
 }
+
+#fortune, #compliment{
+  border-style: dotted;
+  padding:15px
+}
+
 h1 {
   text-align: center;
-  animation: slideInDown 1s ease-out;
+  animation: slideInDown 2s linear;
 }
 
 @keyframes slideInDown {
   from {
-    transform: translateY(-100px);
+    /* //transform: translateY(-10px);  */
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    /* //transform: translateY(0);  */
     opacity: 1;
   }
 }
@@ -35,12 +41,12 @@ h1 {
   margin-right: 10px;
   color : blue;
 
-  animation: slideInLeft 0.5s ease-out;
+  animation: slideInLeft 0.5s ease-in;
 }
 
 @keyframes slideInLeft {
   from {
-    transform: translateX(-100px);
+    transform: translateX(-10px);
     opacity: 0;
   }
   to {
@@ -60,12 +66,12 @@ button{
   margin-right: 5px;
   border-radius: 20%;
   border: none;
-  animation: slideInRight 0.5s ease-out;
+  animation: slideInRight 0.5s ease-in;
 }
 
 @keyframes slideInRight {
   from {
-    transform: translateX(100px);
+    transform: translateX(10px);
     opacity: 0;
   }
   to {
